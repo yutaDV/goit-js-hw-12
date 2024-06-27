@@ -1,6 +1,4 @@
 
-
-
 export function renderImages(images, lightbox) {
   const gallery = document.getElementById('gallery');
   
