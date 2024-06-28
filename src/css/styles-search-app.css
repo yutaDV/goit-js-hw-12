@@ -13,6 +13,7 @@ a {
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+    
 }
 
 .search-form {
@@ -29,12 +30,6 @@ a {
 }
 
 
-/* styles.css */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 .search-form {
     display: flex;
@@ -71,19 +66,6 @@ a {
 
 .btn-search:focus {
     background-color: #0056b3;
-}
-.search-button {
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.search-button:hover {
-    background-color: #45a049;
 }
 
 
@@ -162,4 +144,32 @@ a {
         line-height: 1.33333;
         letter-spacing: 0.04em;
         color: #2e2f42;
+}
+
+.btn-load-more{
+    border-radius: 8px;
+        padding: 8px 16px;
+        width: 125px;
+        height: 40px;
+        background: #4e75ff;
+        border: none;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 32px;
+        margin-bottom: 44px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+}
+
+
+.btn-load-more:hover {
+    background-color: #0056b3;
+}
+
+.btn-load-more:focus {
+    background-color: #0056b3;
 }

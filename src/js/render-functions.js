@@ -1,15 +1,15 @@
 
-export function renderImages(images, lightbox) {
+export function renderImages(images, lightbox, append = false) {
   const gallery = document.getElementById('gallery');
-  
-  // Створення проміжної змінної для зберігання розмітки
-  let markup = images.map(image => createImageCard(image)).join('');
-
-  // Додавання розмітки до галереї
-  gallery.innerHTML = markup;
-
+  const markup = images.map(image => createImageCard(image)).join('');
+  if (append) {
+    gallery.insertAdjacentHTML('beforeend', markup);
+  } else {
+    gallery.innerHTML = markup;
+  }
   lightbox.refresh();
 }
+
 
 
 function createImageCard(image) {
